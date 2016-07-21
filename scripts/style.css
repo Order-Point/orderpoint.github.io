@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "MarkerFelt";
+  src: url(../font/Marker_Felt.ttf) format("truetype");
+}
+@font-face {
+  font-family: "CnL";
+  src: url(../font/CnL.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Kingthings";
+  src: url(../font/Kingthings.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playfair";
+  src: url(../font/PlayfairDisplay-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "MuseoSans";
+  src: url(../font/MuseoSans_500.otf) format("truetype");
+}
+body {
+  background-color: #3299BB;
+  text-align: center;
+  font-family: "MuseoSans";
+}
+/*
+ *header
+ */
+.header {
+  font-family: "Playfair";
+  min-width: 100%;
+  height: 100px;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  letter-spacing: 1px;
+  background-color: #FF9900;
+  -webkit-transition: padding 0.4s ease-out 0s;
+  transition: padding 0.4s ease-out 0s;
+  top: 0px;
+}
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header:after {
+  content: "";
+  display: inline-block;
+  background-color: #424242;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: .5rem;
+  -webkit-transform: translateZ(0) translate(0, 0);
+  transform: translateZ(0) translate(0, 0);
+  -webkit-transition: transform 0.8s ease-out 0.4s;
+  transition: transform 0.8s ease-out 0.4s;
+}
+.logo {
+  float: left;
+  font-family: "Playfair";
+  font-size: 50px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 0px;
+}
+.menu {
+  font-size: 25px;
+  float: right;
+}
+.menu__icon {
+  width: 2.8rem;
+  height: 1.6rem;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateZ(0) translate(0, -50%);
+  transform: translateZ(0) translate(0, -50%);
+  right: 1rem;
+}
+.menu__icon:before {
+  content: '';
+  display: block;
+  height: 0.4rem;
+  width: 2.8rem;
+  background-color: #FF9900;
+  box-shadow: 0 0.8rem #FF9900, 0 1.6rem #FF9900;
+}
+.menu-list {
+  position: relative;
+  margin-top: 0px;
+}
+.menu-list__item {
+  display: inline-block;
+  vertical-align: top;
+  margin: .5rem 1rem;
+}
+.menu-list__item:last-of-type {
+  margin-right: 0;
+}
+.menu__link {
+  color: #424242;
+  -webkit-transition: color 0.4s ease-in 0s;
+  transition: color 0.4s ease-in 0s;
+}
+.menu__link:hover {
+  color: #3299BB;
+}
+.mobile-menu {
+  position: fixed;
+  font-size: 50px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  -webkit-transform: translateZ(0) translate(-100%, 0);
+  transform: translateZ(0) translate(-100%, 0);
+  width: 100%;
+  height: 100%;
+  background-color: #FF9900;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.mobile-menu .menu-close {
+  display: block;
+}
+.menu-close {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+  font-size: 6rem;
+  color: #ffffff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.mobile-menu-list {
+  width: 100%;
+  line-height: 3rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateZ(0) translate(0, -50%);
+  transform: translateZ(0) translate(0, -50%);
+}
+.mobile-menu-list__item {
+  display: block;
+  text-align: center;
+}
+.mobile-menu__link {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.mobile-menu__link:hover {
+  color: #fefefe;
+}
+.fullscreen-menu .mobile-menu {
+  opacity: 1;
+  -webkit-transform: translateZ(0) translate(0, 0);
+  transform: translateZ(0) translate(0, 0);
+}
+.mc_embed_signup {
+  color: #E9E9E9;
+  width: 100%;
+  background: #3299BB;
+  align-content: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+.newsletter_title {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.mc-field-group {
+  align-items: center;
+}
+.button {
+  height: 44px;
+  border: none;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.3em;
+  margin: 20px 0px 20px 0px;
+}
+#mce-EMAIL {
+  width: 330px;
+  color: #424242;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 0px 0px 0px 0px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+}
+#mce-FNAME {
+  width: 160px;
+  color: #424242;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0px 0px 0px;
+}
+#mce-LNAME {
+  width: 160px;
+  color: #424242;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 0px 5px 0px 0px;
+}
+#mc-embedded-subscribe {
+  color: #424242;
+  width: 330px;
+  height: 46px;
+  background: #BCBCBC;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  margin-bottom: 40px;
+}
+#mc-embedded-subscribe:hover {
+  background: #FF9900;
+  color: #E9E9E9
+}
+/*
+ *footer
+ */
+.footer {
+  min-width: 100px;
+  padding: 3rem 1.5rem;
+  background-color: #424242;
+  font-size: 1.5rem;
+  color: #E9E9E9;
+  font-family: "Playfair";
+  letter-spacing: 2px;
+  bottom: 0px;
+}
+.footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer_center-column {
+  float: center;
+  text-align: center;
+}
+.footer__right-column {
+  float: right;
+  text-align: right;
+}
+.footer__left-column {
+  float: left;
+}
+.footer__link {
+  color: #E9E9E9;
+}
+.footer__link:hover {
+  color: #3299BB;
+}
+.item {
+  margin-bottom: 15px;
+}
+.image {
+  margin-top: 90px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+h1 {
+  position: absolute;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 43px;
+  font-family: "MuseoSans";
+  color: #424242;
+  letter-spacing: 2px;
+  min-height: 30px;
+  z-index: 100px;
+}
+.strokeme
+{
+  text-shadow:
+  -0.3px -0.3px 0 #3299BB,
+  0.3px -0.3px 0 #3299BB,
+  -0.3px 0.3px 0 #3299BB,
+  0.3px 0.3px 0 #3299BB;
+}
+#container {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
